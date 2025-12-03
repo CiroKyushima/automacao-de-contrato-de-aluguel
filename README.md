@@ -22,6 +22,7 @@ Esse processo reduz erros, elimina retrabalhos e facilita a criação de documen
 ```bash
 # 1️⃣ Clonar o repositório
 git clone https://github.com/CiroKyushima/automacao-de-contrato-de-aluguel.git
+cd automacao-de-contrato-de-aluguel
 
 # 2️⃣ Instalar as dependências
 pip install -r requirements.txt
