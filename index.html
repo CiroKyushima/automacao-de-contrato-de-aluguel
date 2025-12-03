@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulário - Contrato de Locação</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <main class="container">
+
+    <header class="header">
+      <h1>Formulário de Dados - Contrato de Locação</h1>
+      <p class="subtitle">Preencha os campos abaixo.</p>
+    </header>
+
+    <form action="http://127.0.0.1:5000/gerar" method="POST" enctype="multipart/form-data">
+
+      <div class="upload-box">
+        <label for="arquivo_docx">Enviar arquivo .docx</label>
+        <input type="file" id="arquivo_docx" name="arquivo_docx" accept=".docx" required>
+      </div>
+
+      <fieldset>
+        <legend>Dados do Locador</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="nome_locador">Nome completo</label>
+            <input id="nome_locador" name="nome_locador" placeholder="{nome_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="nacionalidade_locador">Nacionalidade</label>
+            <input id="nacionalidade_locador" name="nacionalidade_locador" placeholder="{nacionalidade_locador}" type="text" />
+          </div>
+
+          <div class="field small">
+            <label for="dia_nascimento_locador">Dia (nasc.)</label>
+            <input id="dia_nascimento_locador" name="dia_nascimento_locador" placeholder="{dia_nascimento_locador}" type="number" min="1" max="31" />
+          </div>
+
+          <div class="field small">
+            <label for="mes_nascimento_locador">Mês (nasc.)</label>
+            <input id="mes_nascimento_locador" name="mes_nascimento_locador" placeholder="{mes_nascimento_locador}" type="number" min="1" max="12" />
+          </div>
+
+          <div class="field small">
+            <label for="ano_nascimento_locador">Ano (nasc.)</label>
+            <input id="ano_nascimento_locador" name="ano_nascimento_locador" placeholder="{ano_nascimento_locador}" type="number" min="1900" max="2099" />
+          </div>
+
+          <div class="field">
+            <label for="RG_locador">RG</label>
+            <input id="RG_locador" name="RG_locador" placeholder="{RG_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="CPF_locador">CPF</label>
+            <input id="CPF_locador" name="CPF_locador" placeholder="{CPF_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="endereco_locador">Endereço</label>
+            <input id="endereco_locador" name="endereco_locador" placeholder="{endereco_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="bairro_locador">Bairro</label>
+            <input id="bairro_locador" name="bairro_locador" placeholder="{bairro_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="CEP_locador">CEP</label>
+            <input id="CEP_locador" name="CEP_locador" placeholder="{CEP_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="cidade_locador">Cidade</label>
+            <input id="cidade_locador" name="cidade_locador" placeholder="{cidade_locador}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="estado_locador">Estado</label>
+            <input id="estado_locador" name="estado_locador" placeholder="{estado_locador}" type="text" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados do Locatário</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="nome_locatario">Nome completo</label>
+            <input id="nome_locatario" name="nome_locatario" placeholder="{nome_locatario}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="nacionalidade_locatario">Nacionalidade</label>
+            <input id="nacionalidade_locatario" name="nacionalidade_locatario" placeholder="{nacionalidade_locatario}" type="text" />
+          </div>
+
+          <div class="field small">
+            <label for="dia_nascimento_locatario">Dia (nasc.)</label>
+            <input id="dia_nascimento_locatario" name="dia_nascimento_locatario" placeholder="{dia_nascimento_locatario}" type="number" min="1" max="31" />
+          </div>
+
+          <div class="field small">
+            <label for="mes_nascimento_locatario">Mês (nasc.)</label>
+            <input id="mes_nascimento_locatario" name="mes_nascimento_locatario" placeholder="{mes_nascimento_locatario}" type="number" min="1" max="12" />
+          </div>
+
+          <div class="field small">
+            <label for="ano_nascimento_locatario">Ano (nasc.)</label>
+            <input id="ano_nascimento_locatario" name="ano_nascimento_locatario" placeholder="{ano_nascimento_locatario}" type="number" min="1900" max="2099" />
+          </div>
+
+          <div class="field">
+            <label for="RG_locatario">RG</label>
+            <input id="RG_locatario" name="RG_locatario" placeholder="{RG_locatario}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="CPF_locatario">CPF</label>
+            <input id="CPF_locatario" name="CPF_locatario" placeholder="{CPF_locatario}" type="text" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados do Imóvel / Contrato</legend>
+        <div class="grid">
+          <div class="field">
+            <label for="endereco">Endereço do Imóvel</label>
+            <input id="endereco" name="endereco" placeholder="{endereco}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="bairro">Bairro</label>
+            <input id="bairro" name="bairro" placeholder="{bairro}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="CEP">CEP</label>
+            <input id="CEP" name="CEP" placeholder="{CEP}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="cidade">Cidade</label>
+            <input id="cidade" name="cidade" placeholder="{cidade}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="estado">Estado</label>
+            <input id="estado" name="estado" placeholder="{estado}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="prazo_locacao">Prazo da Locação (meses)</label>
+            <input id="prazo_locacao" name="prazo_locacao" placeholder="{prazo_locacao}" type="number" />
+          </div>
+
+          <div class="field">
+            <label for="data_inicio">Data de Início</label>
+            <input id="data_inicio" name="data_inicio" placeholder="{data_inicio}" type="date" />
+          </div>
+
+          <div class="field">
+            <label for="data_termino">Data de Término</label>
+            <input id="data_termino" name="data_termino" placeholder="{data_termino}" type="date" />
+          </div>
+
+          <div class="field">
+            <label for="valor_mensal">Valor Mensal (R$)</label>
+            <input id="valor_mensal" name="valor_mensal" placeholder="{valor_mensal}" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="dia_pagamento">Dia do Pagamento</label>
+            <input id="dia_pagamento" name="dia_pagamento" placeholder="{dia_pagamento}" type="number" min="1" max="31" />
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button class="btn primary" type="submit">Gerar Dados (Design)</button>
+        <button class="btn ghost" type="reset">Limpar</button>
+      </div>
+
+    </form>
+
+    <footer class="footer">
+      <small>By: Ciro Kyushima</small>
+    </footer>
+
+  </main>
+</body>
+</html>
